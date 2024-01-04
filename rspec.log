@@ -127,10 +127,10 @@ Userモデルのテスト
 [32m      titleフォームが表示される[0m
 [32m      titleフォームに値が入っていない[0m
 [32m      bodyフォームが表示される[0m
-[31m      bodyフォームに値が入っていない (FAILED - 1)[0m
-[31m      Create Bookボタンが表示される (FAILED - 2)[0m
+[32m      bodyフォームに値が入っていない[0m
+[32m      Create Bookボタンが表示される[0m
     投稿成功のテスト
-[31m      自分の新しい投稿が正しく保存される (FAILED - 3)[0m
+[32m      自分の新しい投稿が正しく保存される[0m
     編集リンクのテスト
 [32m      編集画面に遷移する[0m
     削除リンクのテスト
@@ -283,40 +283,6 @@ Userモデルのテスト
 [32m      投稿一覧画面でレンチアイコンが表示される[0m
 [32m      投稿詳細画面でレンチアイコンが表示される[0m
 
-Failures:
-
-  1) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームに値が入っていない
-     [31mFailure/Error: expect(find_field('book[body]').text).to be_blank[0m
-     [31m  expected `"mkljr1pticniyl5u5wwf".blank?` to be truthy, got false[0m
-     [36m# ./spec/system/02_after_login_spec.rb:158:in `block (4 levels) in <main>'[0m
-
-  2) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される
-     [31mFailure/Error: expect(page).to have_button 'Create Book'[0m
-     [31m  expected to find button "Create Book" that is not disabled but there were no matches[0m
-     [36m# ./spec/system/02_after_login_spec.rb:161:in `block (4 levels) in <main>'[0m
-
-  3) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
-     [31mFailure/Error: expect { click_button 'Create Book' }.to change(user.books, :count).by(1)[0m
-     [31m[0m
-     [31mCapybara::ElementNotFound:[0m
-     [31m  Unable to find button "Create Book" that is not disabled[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.37.1/lib/capybara/node/finders.rb:310:in `block in synced_resolve'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.37.1/lib/capybara/node/base.rb:83:in `synchronize'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.37.1/lib/capybara/node/finders.rb:299:in `synced_resolve'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.37.1/lib/capybara/node/finders.rb:60:in `find'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.37.1/lib/capybara/node/actions.rb:58:in `click_button'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.37.1/lib/capybara/session.rb:771:in `click_button'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.37.1/lib/capybara/dsl.rb:52:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.37.1/lib/capybara/dsl.rb:52:in `click_button'[0m
-     [36m# ./spec/system/02_after_login_spec.rb:172:in `block (5 levels) in <main>'[0m
-     [36m# ./spec/system/02_after_login_spec.rb:172:in `block (4 levels) in <main>'[0m
-
-Finished in 37.55 seconds (files took 4.42 seconds to load)
-[31m199 examples, 3 failures[0m
-
-Failed examples:
-
-[31mrspec ./spec/system/02_after_login_spec.rb:157[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームに値が入っていない[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:160[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:171[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される[0m
+Finished in 31.68 seconds (files took 2.03 seconds to load)
+[32m199 examples, 0 failures[0m
 
